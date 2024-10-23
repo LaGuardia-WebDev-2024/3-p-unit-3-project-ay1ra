@@ -1,12 +1,12 @@
 <!--
 Requirements
 [  ] Two External Links
-[  ] Table
-[  ] Three CSS Rules
-[  ] Three Images
+[ yes ] Table
+[ yes ] Three CSS Rules
+[ yes ] Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Include a :hover feature
+[ yes ] Feature 1 - Include a :hover feature
 [ no ] Feature 2 - Include at least two Internal links
 [ no ] Feature 3 - Include a list in a tabl
 [ no ] Feature 4 - Include at least two background images in a table
@@ -14,47 +14,114 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Project: Recipe book</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background-color: rgb(173, 196, 206);
+      }
+      h1 {
+        color: rgb(238, 224, 201);
+      }
+      h2:hover {
+        background-color: rgb(241, 240, 232);
+        color: rgb(150, 182, 197);
+      }
 
-<head>
-  <title>Project: Recipe book</title>
-  <meta charset="utf-8">
-  <style>
-  </style>
-</head>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      table,
+      th,
+      td {
+        margin: 25px;
+      }
+      .tan {
+        background-color: rgb(238, 224, 201);
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
+    <h1><u>Ayira's College Organizer </u></h1>
+    <h2>Early Action Applications</h2>
+    <ol>
+      <li>University of Southern California</li>
+      <li>American University</li>
+      <li>Rutgers University</li>
+      <li>University of Albany</li>
+      <li>Fordham University</li>
+      <li>SUNY Binghampton</li>
+      <li>Penn State</li>
+      <li>Buffalo State University</li>
+    </ol>
 
-  <h1>____'s Recipe Book</h1>
+    <h2>Regular Decisions Applications</h2>
+    <ol>
+      <li>Boston University</li>
+      <li>Brown University</li>
+      <li>Columbia University</li>
+      <li>New York University</li>
+      <li>University of Connecticut</li>
+      <li>Georgetown University</li>
+      <li>UC Los Angeles</li>
+      <li>UC Irvine</li>
+      <li>UC Berkeley</li>
+    </ol>
 
-  <h2>Contents:</h2>
+    <p>
+      <li> <a href="https://www.commonapp.org/"> Common App</a> </li> <br>
+     <li> <a href="https://www.collegeboard.org/"> College Board</a> </li>
+       
+    </p>
+    
+    <h2>Stats for my top schools</h2>
 
-  <ol>
-    <li><a href="?">Recipe #1</a></li>
-  </ol>
+    <table>
+      <thead>
+        <tr>
+          <th><strong class="tan"> Schools </strong></th>
+          <th><strong class="tan"> Tuition </strong></th>
+          <th><strong class="tan"> Rating </strong></th>
+          <th><strong class="tan">Crest</strong></th>
+        </tr>
+      </thead>
 
-  <h2 id="?">Recipe #1</h2>
-
-  <ul>
-    <li>Time: _</li>
-    <li>Serves: _</li>
-  </ul>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Ingredients</th>
-        <th>Quantity</th>
-      </tr>
-    </thead>
-    <tbody>
-    </tbody>
-  </table>
-
-  <p><strong>Step 1:</strong> Do something.
-  </p>
-
-  <p><em>Source: <a href="?">Some recipes websites</a></em></p>
-
-</body>
-
+      <tbody>
+        <tr>
+          <td>USC</td>
+          <td>$90,000</td>
+          <td>10000/10 (accept meee)</td>
+          <td>
+            <img src=
+            "https://cdn.glitch.global/982fa9a2-cc83-47aa-aab4-2781aaf50afc/download.png?v=1729650271376"
+            width= "60">
+          </td>
+        </tr>
+        <tr>
+          <td>Georgetown</td>
+          <td>$68,000</td>
+          <td>8.5/10</td>
+          <td>
+            <img
+            src="https://cdn.glitch.global/982fa9a2-cc83-47aa-aab4-2781aaf50afc/images.jpg?v=1729650202693"
+            width="60">
+          </td>
+        </tr>
+        <tr>
+          <td>UCLA</td>
+          <td>$76,000</td>
+          <td>8/10</td>
+          <td>
+            <img src=
+            "https://cdn.glitch.global/982fa9a2-cc83-47aa-aab4-2781aaf50afc/download-1.png?v=1729650042640"
+            width= "60">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
